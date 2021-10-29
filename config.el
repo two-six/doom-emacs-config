@@ -60,3 +60,4 @@
 (defun jpk/eshell-mode-hook ()
   (eshell/addpath "~/.cargo/bin"))
 (add-hook 'eshell-mode-hook #'jpk/eshell-mode-hook)
+(display-time-mode 1)
