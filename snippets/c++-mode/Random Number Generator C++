@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Random Number Generator C++
+# key: random
+# --
+std::mt19937 ${3:engine};
+std::uniform_int_distribution<int> ${4:distribution}($1, $2);
+$3.seed(std::random_device{}());
+auto const ${5:RANDOM_NUMBER} = $4($3); $0

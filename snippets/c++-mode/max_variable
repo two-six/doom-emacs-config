@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: std::numeric_limits<>::max();
+# key: max_variable
+# condition: t
+# --
+auto const ${2:variable_name} = std::numeric_limits<${1:type}>::max(); $0 // #include <locale>
